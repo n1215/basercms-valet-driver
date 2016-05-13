@@ -5,7 +5,7 @@ Mac用の簡易PHP開発環境をセットアップするツールLaravel Valet�
 詳細は[Valetのドキュメント](https://laravel.com/docs/5.2/valet#installation)参照
 
 ## 環境変数PATHを追加
-    ~/.bash_profileや~/.bashrcに記述しておく
+~/.bash_profileや~/.bashrcに記述しておく
 
     export PATH=$HOME/.composer/vendor/bin:$PATH
 
@@ -17,13 +17,16 @@ Mac用の簡易PHP開発環境をセットアップするツールLaravel Valet�
 * Composer
 
 
-    # Homebrewをインストール
+Homebrewをインストール
+
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-    # HomebrewでPHP5.6をインストール
+HomebrewでPHP5.6をインストール
+
     brew install homebrew/php/php56
 
-    # Composerをグローバルインストール
+Composerをグローバルインストール
+
     php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
     php -r "if (hash_file('SHA384', 'composer-setup.php') === '92102166af5abdb03f49ce52a40591073a7b859a86e8ff13338cf7db58a19f7844fbc0bb79b2773bf30791e935dbd938') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
     php composer-setup.php
@@ -32,20 +35,23 @@ Mac用の簡易PHP開発環境をセットアップするツールLaravel Valet�
 
 ### Valetのインストール
 
-    # ComposerでValetをグローバルで追加
+ComposerでValetをグローバルで追加
+
     composer global require laravel/valet
 
-    # Valetをインストール（ValetとDnsmasqを設定してValetのデーモンをシステムに登録）
+Valetをインストール（ValetとDnsmasqを設定してValetのデーモンをシステムに登録）
+
     valet install
 
 ### Valetに親ディレクトリを登録
 
-    # 適当にディレクトリを作る
+適当にディレクトリを作る
+
     cd ~/
     mkdir valet-sites
 
+Valetにパスを登録
 
-    # Valetにパスを登録
     cd valet-site/
     valet park
 
