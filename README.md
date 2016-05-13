@@ -4,7 +4,7 @@ Mac用の簡易PHP開発環境をセットアップするツールLaravel Valet�
 ## 使い方
 詳細は[Valetのドキュメント](https://laravel.com/docs/5.2/valet#installation)参照
 
-## 環境変数PATHを追加
+### 環境変数PATHを追加
 ~/.bash_profileや~/.bashrcに記述しておく
 
     export PATH=$HOME/.composer/vendor/bin:$PATH
