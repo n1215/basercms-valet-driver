@@ -4,13 +4,13 @@ Mac用の簡易PHP開発環境をセットアップするツールLaravel Valet�
 ## 使い方
 詳細は[Valetのドキュメント](https://laravel.com/docs/5.2/valet#installation)参照
 
-### 環境変数PATHを追加
+### 1.環境変数PATHを追加
 ~/.bash_profileや~/.bashrcに記述しておく
 
     export PATH=$HOME/.composer/vendor/bin:$PATH
 
 
-### Valetに必要なツールをインストール
+### 2.Valetに必要なツールをインストール
 * Git
 * Homebrew
 * PHP5.6
@@ -33,7 +33,7 @@ Composerをグローバルインストール
     php -r "unlink('composer-setup.php');"
     mv composer.phar /usr/local/bin/composer
 
-### Valetのインストール
+### 3.Valetのインストール
 
 ComposerでValetをグローバルで追加
 
@@ -43,7 +43,7 @@ Valetをインストール（ValetとDnsmasqを設定してValetのデーモン�
 
     valet install
 
-### Valetに親ディレクトリを登録
+### 4.Valetに親ディレクトリを登録
 
 適当にディレクトリを作る
 
@@ -57,14 +57,14 @@ Valetにパスを登録
 
 ~/valet-site のサブディレクトリがそれぞれ {ディレクトリ名}.devというドメインでアクセスできるようになる。
 
-### カスタムドライバ追加
+### 5.カスタムドライバ追加
 このディレクトリのBaserCMSValetDriver.phpを~/.valet/Drivers/BaserCMSValetDriver.phpに配置
 
-### baserCMSをクローン
+### 6.baserCMSをクローン
     git clone https://github.com/baserproject/basercms
     cd basercms
 
-### http://basercms.devにアクセス
+### 7.http://basercms.devにアクセス
 
 
 ## License
