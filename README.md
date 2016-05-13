@@ -64,7 +64,7 @@ Valetにパスを登録
     git clone https://github.com/baserproject/basercms
     cd basercms
 
-### 7.http://basercms.devにアクセス
+### 7.http://basercms.dev にアクセス
 
 
 ## License
