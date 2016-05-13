@@ -16,7 +16,8 @@ Mac用の簡易PHP開発環境をセットアップするツールLaravel Valet�
 * PHP5.6
 * Composer
 
-    ### Homebrewをインストール
+
+    # Homebrewをインストール
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
     # HomebrewでPHP5.6をインストール
